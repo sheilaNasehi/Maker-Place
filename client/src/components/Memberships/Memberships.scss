@@ -1,0 +1,88 @@
+.membership-page {
+
+  /* The membership page background image */
+  .membership-image {
+    /* The image used */
+    background-image: url(membership_page_background.jpg);
+    /* Set a specific height */
+    height: 100vh;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+
+    /* Place text in the middle of the image */
+    .membership-text {
+      color: white; 
+
+      .membership-header {
+        padding-top: 20px;
+        margin-bottom: 20px;
+        
+        /* center header in 720px box in */
+        text-align: center;
+        width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .membership-title {
+          font-size: 28px;
+        }
+        .membership-description {
+          font-size: 18px;
+        }
+      }
+
+      .cards {
+        max-width: 1210px;
+        margin-left: auto;
+        margin-right: auto;
+        .card {
+          /* float fixed width cards across center of page */
+          float: left;
+          margin: 10px;
+          width: 180px;
+          height: 550px;
+          text-align: center;
+          background: rgba(white, .9);
+
+          .card-body {
+            display: flex;
+            flex-direction: column;           
+            background-color: width;
+            /*background-opacity:*/
+
+            .card-title {
+              color: grey;
+              font-size: 24px;
+            }
+
+            .card-annual-cost, 
+            .card-monthly-cost,  
+            .card-discount {
+              color: grey;
+              font-size: 16px;
+            }
+            
+            .card-discount {
+              color: green;
+            }
+
+            .card-text {
+              color: grey;
+              font-size: 14px;
+            }
+
+            button.btn {
+              margin-top: auto;
+            }         
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
