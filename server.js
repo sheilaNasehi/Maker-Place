@@ -40,7 +40,6 @@ app.use((req, res, next) => {
     res.locals.errors = [];
     next();
 })
-//server.js
 
 app.use(express.static(path.join(__dirname,'/public')));
 // passport config
@@ -50,9 +49,7 @@ app.use(require('./routes/')); // main routes
 
 // Serve up static assets
 //we need to use the next line to push the app in heroku
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'));
-}
+app.use(express.static("client/build"));
 
 // Start the API server
 server.listen(PORT, function () {
